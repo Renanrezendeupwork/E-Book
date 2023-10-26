@@ -1,0 +1,114 @@
+.audioctrlbtn {
+  border-radius: 20px;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.audioctrlbtn:hover {
+  background-color: #cccccc;
+}
+
+.progressholder {
+  min-width: 100px;
+  background-color: grey;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.progressbar {
+  width: 0%;
+  height: 10px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.audiotimer {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0px 5px;
+}
+
+.audioplayer {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: inline-block;
+}
+
+.audiovolume {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+}
+
+.audiospeed {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .audioctrlbtn {
+    font-size: 24px;
+  }
+  .progressbar {
+    height: 16px;
+  }
+  .audiotimer {
+    font-size: 16px;
+  }
+  .audiospeed {
+    bottom: 50px;
+  }
+  .audiovolume {
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .audioctrlbtn {
+    font-size: 24px;
+  }
+  .progressbar {
+    height: 16px;
+  }
+  .audiotimer {
+    font-size: 16px;
+  }
+  .audiospeed {
+    bottom: 50px;
+  }
+  .audiovolume {
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-device-width: 601px) {
+  .audioctrlbtn {
+    font-size: 24px;
+  }
+  .progressbar {
+    height: 16px;
+  }
+  .audiotimer {
+    font-size: 16px;
+  }
+  .audiospeed {
+    bottom: 50px;
+  }
+  .audiovolume {
+    bottom: 50px;
+  }
+}

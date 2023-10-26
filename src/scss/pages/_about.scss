@@ -1,0 +1,30 @@
+.about_page {
+  .hero {
+    padding: 10px;
+    min-height: 300px;
+    border: 1px solid #6f6f6f;
+    background-position-y: center;
+    img {
+      width: 150px;
+    }
+  }
+  h1 {
+    margin: 40px 0;
+  }
+  p {
+    margin: 20px 0;
+    &.first-child {
+      margin-top: 2em;
+    }
+  }
+  h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .center_btn {
+    a {
+      margin-top: 130px;
+    }
+  }
+}

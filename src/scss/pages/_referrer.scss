@@ -1,0 +1,49 @@
+.refer_friend_page {
+  .cover_img {
+    .text_container {
+      align-self: stretch;
+      width: 100%;
+      display: flex;
+      .container {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.friends_emails {
+  background-color: #f3f3f3;
+  padding: 20px 30px;
+  margin-top: -80px;
+  .form-inline {
+    margin-bottom: 10px;
+    span {
+      text-align: right;
+      width: 77%;
+      display: block;
+    }
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .friends_emails {
+    margin-top: 10px;
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+    }
+    .form-inline:not(:last-child) {
+      border-bottom: 1px solid #dedede;
+    }
+  }
+}

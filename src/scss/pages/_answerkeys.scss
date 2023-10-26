@@ -1,0 +1,15 @@
+.key_cont {
+  margin-bottom: 10px;
+  p,
+  a {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .additional_key {
+    display: flex;
+  }
+}

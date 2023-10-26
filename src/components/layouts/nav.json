@@ -1,0 +1,8 @@
+[
+  { "to": "/refer_friend", "txt": "Refer a Friend", "teacher_only": true },
+  {
+    "to": "/support",
+    "txt": "Support",
+    "teacher_only": true
+  }
+]

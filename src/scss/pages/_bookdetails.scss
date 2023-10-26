@@ -1,0 +1,208 @@
+.book_desc_info {
+  max-height: calc(#{$book_detail_height} - 200px);
+  overflow-y: scroll;
+}
+.book_details {
+  h1 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .rating_group {
+    margin: 0px 10px;
+    .rating_stars {
+      i {
+        font-size: 18px;
+        color: $color-gold;
+      }
+    }
+    &.teachers {
+      .rating_stars {
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .book_info {
+    color: $color-light;
+    text-align: left;
+    p {
+      margin-top: 20px;
+    }
+    .back_btn {
+      color: $color-light;
+      padding-left: 0;
+    }
+    .badge {
+      font-weight: normal;
+      margin-right: 5px;
+      padding: 6px 12px;
+      border-radius: 22px;
+    }
+    .row {
+      background-color: $main-nav-color;
+      .col-lg-8 {
+        height: $book_detail_height;
+      }
+    }
+    .book_cover{
+      img{
+        width: 100%;
+        max-height: $book_detail_height;
+      }
+    }
+  }
+  .book_ctas {
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+    a {
+      border-radius: 50px;
+      display: block;
+      &.rate_link {
+        &:hover {
+          color: $color-gold;
+        }
+      }
+    }
+  }
+  .back_btn {
+    color: white;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .badge {
+    font-weight: normal;
+    margin-right: 5px;
+  }
+  .video_btn {
+    position: absolute;
+    right: 15%;
+    transition: 0.3s all;
+    top: calc(50% - 25px);
+    padding: 25px 50px;
+    border: 1px solid rgba(white, 0.5);
+    color: white;
+    background: tomato;
+    &:hover {
+      color: tomato;
+      background: white;
+    }
+  }
+  .video_container {
+    position: absolute;
+    align-items: center;
+    top: -5%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+    justify-content: center;
+    background-color: #1c1d1f;
+    width: 100%;
+    display: flex;
+    &.active {
+      pointer-events: all;
+      top: 0;
+      opacity: 1;
+    }
+    video {
+      height: 80vh;
+      max-width: 100%;
+    }
+  }
+}
+.students_ratings {
+  & > .heading {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    h4 {
+      text-align: center;
+    }
+    i {
+      font-size: 50px;
+      opacity: 0.7;
+    }
+  }
+}
+.raitings_cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .rating_card {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 30%;
+    min-height: 210px;
+    padding: 15px 20px;
+
+    margin-bottom: 20px;
+    h5,
+    h6,
+    p {
+      color: #333;
+      margin: 0;
+    }
+    h6 {
+      font-size: 15px;
+    }
+    .rating_stars {
+      i {
+        font-size: 18px;
+      }
+    }
+    .text_gold {
+      color: #ffc825;
+    }
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// iPad custom styles
+@media only screen and (min-device-width: $screen-sm-min) and (max-device-width: 1024px) {
+  .book_details {
+    .book_info {
+      max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 765px) {
+  .book_details {
+    .video_btn {
+      top: 25px;
+      right: calc(50% - 113px);
+      background: rgba(white, 0.2);
+    }
+  }
+}
+.green_theme{
+  .book_details {
+    .back_btn {
+      color: $green-type-color;
+    }
+    .badge {
+      color: $green-type-color;
+      background-color: $color-green-badge;
+    }
+    .book_info {
+      .row {
+        background-color: $color-green-table;
+        color: $green-type-color;
+      }
+      .rate_link {
+        color: $green-hover-color !important;
+        background-color: transparent;
+        border: none;
+        &:hover {
+          color: $green-type-color !important;
+        }
+      }
+    }
+  }
+}

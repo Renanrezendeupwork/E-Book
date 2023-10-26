@@ -1,0 +1,295 @@
+$btn_padding: 10px 20px;
+.un_clicked {
+  pointer-events: none;
+}
+
+.hovered {
+  cursor: pointer;
+}
+
+.no_focus {
+  outline: none;
+  box-shadow: none;
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn {
+  border-radius: 20px;
+  &.text_gold {
+    color: $color-gold !important;
+    i {
+      color: $color-gold !important;
+    }
+  }
+  &_round {
+    border-radius: 100%;
+  }
+  &-copy {
+    i {
+      opacity: 0.5;
+    }
+    img {
+      width: 85px;
+      margin-left: 15px;
+    }
+    &:hover > i {
+      opacity: 0.7;
+    }
+  }
+  &_lg {
+    padding: 15px;
+  }
+  &_sm {
+    padding: 5px;
+  }
+  &.btn_option {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    position: relative;
+    color: $color-white;
+    background-color: #222222;
+    font-weight: lighter;
+    i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $color-success;
+      font-size: 20px;
+    }
+    &.selected {
+      background-color: $color-success;
+      i {
+        color: $color-white;
+      }
+    }
+  }
+}
+.btn_facebook {
+  background-color: #425890;
+  border-radius: 15px;
+}
+
+.img_btn {
+  position: relative;
+  background-color: transparent;
+  input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  & > i {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    color: white;
+    font-size: 45px;
+    margin: auto;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+  }
+  img {
+    transition: all 0.3s;
+  }
+  &:hover,
+  &.loading {
+    border-color: rgba(000, 000, 000, 0.7);
+    cursor: pointer;
+    img {
+      opacity: 0.5;
+    }
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+.sort_th {
+  position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  .sort_arrow {
+    position: absolute;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.chapter_retakes_btn {
+  position: relative;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  @extend .no_focus;
+  &:hover {
+    .icon {
+      opacity: 1 !important;
+    }
+  }
+  .icon {
+    color: tomato;
+    opacity: 0;
+    position: absolute;
+    top: 9px;
+    left: 85%;
+    &.fa-spin {
+      opacity: 0.8;
+    }
+    &.show {
+      opacity: 0.8;
+    }
+  }
+  .reuested_text {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 8px;
+    white-space: nowrap;
+  }
+}
+
+.login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:active {
+    background-color: #eeeeee;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+      0 0 0 3px #c8dafc;
+  }
+  &:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+  img {
+    margin-right: 24px;
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+.video-link {
+  position: relative;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:hover {
+    i {
+      opacity: 1;
+      color: tomato;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .btn {
+    &_mobile {
+      padding: $btn_padding;
+      &_block {
+        padding: $btn_padding;
+        display: block;
+      }
+    }
+  }
+}
+
+
+.green_theme{
+  .green_dark{
+    color: $color-dark !important;
+  }
+  .green_contain_green_light{
+    background-color: $color-green-button-c !important;
+    color: $color-dark !important;
+    border: none !important;
+    box-shadow: none !important;
+    &:hover,&:active{
+      color: $color-green-button !important;
+    }
+  }
+  .green_contain_green{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: $color-green-button-b !important;
+    color: $color-light !important;
+    &:hover{
+      background-color: $color-green-button !important;
+    }
+  }
+  .green_contain_trans{
+    color: $green-hover-color !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    &:hover{
+      color: $green-type-color !important;
+    }
+  }
+  .green_contain_gray{
+    background-color: $color-green-table !important;
+    color: $green-type-color !important;
+    border: none !important;
+    &:hover{
+      background-color: $color-light !important;
+    }
+  }
+  .green_outline_gray{
+    border: 1px solid $green-hover-color !important;
+    color: $green-hover-color !important;
+    background-color: $color-light !important;
+    box-shadow: none !important;
+    &:hover{
+      color: $color-dark !important;
+      border: 1px solid $color-dark !important;
+    }    
+  }
+  .green_contain_danger_light{
+    background-color: $green-danger-light !important;
+    color: $green-danger !important;
+    border: none !important;
+    box-shadow: none !important;
+    &:hover{
+      color: $color-light !important;
+      background-color: $green-danger !important;
+    }
+  }
+}

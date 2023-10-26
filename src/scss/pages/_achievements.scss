@@ -1,0 +1,52 @@
+.achievements_page {
+  .heading {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    * {
+      margin: 0;
+    }
+    .points {
+      $square-size: 80px;
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $square-size;
+      width: $square-size;
+      border-radius: 100%;
+      border: 2px solid #43c6ed;
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+}
+.achievements_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &:first-child {
+    border-top: 1px solid white;
+    margin-top: 35px;
+  }
+  .achievement_block {
+    text-align: center;
+    padding: 35px;
+    img {
+      max-height: 150px;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    &.unlocked {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .achievements_cont {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,61 @@
+.raitings_page {
+  h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 17px;
+    color: rgba($color: $color-light, $alpha: 0.7) !important;
+    font-weight: normal;
+    &.no_rating {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  img {
+    border-radius: 20px 20px 0 0;
+  }
+  .raiting_item {
+    border-top: 1px solid $color-light;
+    padding: 20px 0;
+    h3 {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    &:last-child,
+    &.last-child {
+      border-bottom: 1px solid $color-light;
+    }
+    .star_buttons {
+      .btn {
+        padding: 2px;
+        font-size: 20px;
+        color: $color-secondary;
+        &:hover,
+        &.hover {
+          color: $color-gold;
+          i {
+            color: $color-gold;
+          }
+        }
+      }
+    }
+  }
+  .form-control {
+    max-width: 100%;
+  }
+}
+
+.green_theme{
+  .raitings_page{
+    p{
+      color: $color-dark !important;
+    }
+  }
+}

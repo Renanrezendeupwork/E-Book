@@ -1,0 +1,25 @@
+{
+  "short_name": "Flangoo",
+  "name": "Flangoo is a web-based service that streams digital readers to your students at home. Subscriptions work with any device, from laptops to desktops, tablets to smartphones. Wherever your students are, Flangoo is at their fingertips",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "flangoo_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "flangoo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

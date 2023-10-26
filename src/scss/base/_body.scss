@@ -1,0 +1,206 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $main-background;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  .btn-link {
+    color: $main-type-color;
+  }
+  a,
+  .btn-link {
+    &:hover {
+      color: $main-hover-color;
+    }
+  }
+  &.lock,
+  &.scroll_lock {
+    overflow: hidden;
+  }
+  .front_pages {
+    background-color: black;
+  }
+  &.white_bg {
+    background-color: #f3f3f3;
+    .front_pages {
+      background-color: #f3f3f3;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    p {
+      color: $color-dark;
+    }
+  }
+  &.black_bg {
+    background-color: #000;
+    .front_pages {
+      background-color: #000;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    p {
+      color: $color-white;
+    }
+  }
+  &.scroll_lock {
+    overflow: hidden;
+  }
+  .theme_panel{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+  & .green_theme{
+    background-color: $color-green-back;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    label,
+    small,
+    .btn-link {
+      color: $green-type-color;
+    }
+    a,
+    .btn-link {
+      &:hover {
+        color: $green-hover-color;
+      }
+    }
+    .front_pages {
+      background-color: $color-light
+    }
+    &.white_bg {
+      background-color: #f3f3f3;
+      .front_pages {
+        background-color: #f3f3f3;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      p {
+        color: $color-light;
+      }
+    }
+    &.black_bg {
+      background-color: $color-light;
+      .front_pages {
+        background-color: $color-light;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      p {
+        color: $green-type-color;
+      }
+    }
+    footer{
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a,
+      p {
+        color: $color-light;
+      }
+    }
+  }
+
+}
+main {
+  &.bg-light,
+  &.bg-white {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: $color-dark;
+    }
+  }
+  & .green_theme{
+    &.bg-light,
+    &.bg-white {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.first-container {
+  margin-top: $nav-height;
+  padding: 20px 100px 50px 100px;
+  &.no_padding {
+    padding: 0;
+  }
+}
+
+.last-container {
+  padding-bottom: 100px;
+  &.no_padding {
+    padding: 0;
+  }
+}
+
+.hidden_read {
+  display: none;
+}
+@media screen and (max-width: 765px) {
+  body {
+    &.scroll_lock_mob {
+      overflow: hidden;
+    }
+  }
+  body,
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .first-container {
+    margin-top: $nav-height-mob;
+  }
+}

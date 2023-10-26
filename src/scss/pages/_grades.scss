@@ -1,0 +1,15 @@
+.grades_table{
+  .chapter_retakes_btn{
+    .reuested_text{
+      display: none;
+    }
+    .grades_past{
+      position: absolute;
+      top: 85%;
+      right: 0;
+      left: 0;  
+      text-align: center;
+      pointer-events: none;
+    }
+  }
+}

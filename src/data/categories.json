@@ -1,0 +1,16 @@
+[
+  {
+    "id": false,
+    "name": "Continue Reading",
+    "is_continue": true,
+    "is_trending": false,
+    "is_level": false
+  },
+  { "id": 6, "name": "Level 2", "is_trending": "0", "is_level": "1" },
+  { "id": 5, "name": "Level 1", "is_trending": "1", "is_level": "1" },
+  { "id": 4, "name": "Movies", "is_trending": "0", "is_level": "0" },
+  { "id": 3, "name": "Travel", "is_trending": "0", "is_level": "0" },
+  { "id": 7, "name": "Level 3", "is_trending": "0", "is_level": "1" },
+  { "id": 8, "name": "History", "is_trending": "0", "is_level": "0" },
+  { "id": 9, "name": "Pre-Level 1", "is_trending": "0", "is_level": "1" }
+]

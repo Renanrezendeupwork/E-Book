@@ -1,0 +1,23 @@
+.transfer_students_page {
+  .transfer_card {
+    .card_info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-self: stretch;
+      .ctas {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .students_table {
+      th {
+        border-top: none;
+        margin-top: 0;
+      }
+      height: 200px;
+      overflow-y: scroll;
+    }
+  }
+}

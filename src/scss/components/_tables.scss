@@ -1,0 +1,33 @@
+.sticky_table {
+  position: sticky !important;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  &:nth-child(2) {
+    border-right: 1px solid #ececec;
+    left: 81px;
+  }
+  &_tbody {
+    overflow: visible !important;
+  }
+  &_right {
+    @extend .sticky_table;
+    left: unset;
+    border-left: 1px solid #ececec;
+    right: 86px;
+    &:last-child {
+      right: 0;
+      left: unset;
+      border-left: none;
+    }
+  }
+}
+
+.table-hover{
+  tbody{
+    tr:hover {
+      background-color: $color-light;
+    }
+  }
+}

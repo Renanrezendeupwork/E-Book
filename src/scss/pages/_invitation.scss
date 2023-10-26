@@ -1,0 +1,15 @@
+.invitation_form {
+  background-color: #f3f3f3;
+  padding: 20px 30px;
+  .form-inline {
+    margin-bottom: 10px;
+    span {
+      text-align: right;
+      width: 77%;
+      display: block;
+    }
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}

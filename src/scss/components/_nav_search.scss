@@ -1,0 +1,114 @@
+.nav_search {
+  display: flex;
+  position: relative;
+  align-items: center;
+  &.nav_search_mob {
+    display: none;
+  }
+  .cleared_input {
+    input {
+      width: 1%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      float: right;
+    }
+  }
+  .search_btn {
+    position: absolute;
+    right: 0;
+    // top: 8px;
+    color: white;
+  }
+  &.active {
+    .cleared_input {
+      input {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+    .search_btn {
+      color: $color-dark;
+    }
+  }
+}
+
+.green_theme .nav_search{
+  .search_btn {
+    color: $green-type-color;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .nav_search {
+    display: none;
+    &.nav_search_mob {
+      display: block;
+    }
+  }
+  .navbar {
+    &.is-warning {
+      height: $top-warning-height;
+      display: flex;
+      &.centered {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &.flex {
+      &.landing {
+        .navbar-collapse {
+          display: none !important;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          max-height: 90vh;
+          &.in {
+            display: flex !important;
+          }
+        }
+        .login_ctas {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          a {
+            padding: 30px 17px;
+            flex: 1 1;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .nav_search_mob {
+    &.active {
+      .search_key {
+        top: 0;
+      }
+      .cleared_input {
+        button {
+          top: 31px;
+        }
+      }
+    }
+    .cleared_input {
+      button {
+        top: 0px;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .search_results.active {
+    padding-top: 60px;
+  }
+  .search_key {
+    margin-top: 30px;
+    position: absolute;
+
+    top: -100px;
+  }
+}

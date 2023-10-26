@@ -1,0 +1,99 @@
+.books_page {
+  &.active_reader {
+    padding-top: $book_detail_height;
+  }
+  .dataTables_length,
+  .dataTables_info,
+  .dataTables_filter {
+    color: white;
+    margin-bottom: 15px;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    margin: 0;
+    padding: 0;
+  }
+  .level_group {
+    &:hover {
+      .react-multiple-carousel__arrow {
+        opacity: 1;
+        &::before {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .react-multiple-carousel__arrow {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    line-height: 1;
+    font-size: 40px;
+    border: none;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    &::before {
+      font-size: 45px;
+      transition: all 0.2s ease-out;
+    }
+    &:active,
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      background: transparentize($color: $color-red, $amount: 0.2);
+    }
+    &--left {
+      border-radius: 0 15px 15px 0;
+      left: -15px;
+    }
+    &--right {
+      border-radius: 15px 0 0 15px;
+      right: -15px;
+    }
+  }
+}
+.books_table {
+  .cta_td {
+    width: 50px;
+  }
+  .img_td {
+    width: 80px;
+    img {
+      width: 80px;
+    }
+  }
+  .title_td {
+    .fa {
+      opacity: 0;
+      margin-left: 15px;
+      transition: opacity 0.3s ease-in-out;
+    }
+    a:hover > .fa {
+      opacity: 0.8;
+    }
+  }
+  .status_txt {
+    display: none;
+    position: absolute;
+  }
+}
+
+.disabled_book {
+  padding-top: 90px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  h1,
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 20px 0;
+  }
+}

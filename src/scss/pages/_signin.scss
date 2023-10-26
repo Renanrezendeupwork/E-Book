@@ -1,0 +1,21 @@
+.signin-page {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.flangoo.com/assets/frontend/flixer/images/flangoo-student-sign-in-9-21.png");
+  .form_cont {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .signin-page {
+    background-position: bottom center;
+    background-image: url("https://cdn.flangoo.com/assets/frontend/flixer/images/mobile-bg-login-2.png");
+    .form_cont {
+      align-items: flex-start;
+      padding-top: 15%;
+    }
+  }
+}

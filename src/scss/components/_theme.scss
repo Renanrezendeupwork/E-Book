@@ -1,0 +1,22 @@
+@mixin themes($background, $foreground) {
+  background-color: $background;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    &:not(.black_text) {
+      color: $foreground;
+    }
+  }
+}
+.theme_color {
+  &_dark {
+    @include themes(#000000, #fff);
+  }
+  &_light {
+    @include themes(#f3f3f3, #000000);
+  }
+}

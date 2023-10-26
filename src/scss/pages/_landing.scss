@@ -1,0 +1,298 @@
+$p_size: 19px;
+.landing_page {
+  .btn {
+    border-radius: 10px;
+    padding: 10px 80px;
+    &.btn_lg {
+      padding: 20px;
+    }
+    &.btn-warning,
+    &.btn-primary {
+      color: white;
+    }
+  }
+  .hero {
+    $img-w: 500px;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .flangoologo {
+      margin-top: 65px;
+      width: $img-w;
+    }
+    .pricing {
+      position: absolute;
+      bottom: 10px;
+    }
+    .try_btn {
+      width: $img-w;
+    }
+    .btn-group {
+      .btn {
+        width: inherit;
+      }
+    }
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      clear: both;
+      text-align: center;
+      color: #fff;
+      margin: 15px 0 35px;
+    }
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 30px;
+      letter-spacing: 0.2px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .ctas {
+      display: block;
+      position: relative;
+      .special_dot {
+        position: absolute;
+        top: -60px;
+        right: 10px;
+        width: 150px;
+        margin: 0;
+      }
+    }
+    .row_80 {
+      padding: 100px 50px;
+    }
+  }
+  .section {
+    background-color: #000;
+    .checkmarks {
+      & > div {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        img {
+          width: 50px;
+          margin-right: 15px;
+        }
+        p {
+          font-size: $p_size;
+          margin: 0;
+        }
+      }
+    }
+    h3 {
+      display: block;
+      margin: 40px auto;
+      &:not(.text-left) {
+        max-width: 80%;
+        text-align: center;
+      }
+    }
+    &_02 {
+      .background_image {
+        background-position: bottom;
+        background-size: cover;
+      }
+      .col_ {
+        &right {
+          padding-top: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          padding-bottom: 0;
+        }
+      }
+      p {
+        font-size: $p_size;
+      }
+    }
+    &_03 {
+      padding: 100px 0;
+      h3 {
+        margin-top: 0;
+      }
+      p {
+        font-size: $p_size;
+        margin-bottom: 20px;
+      }
+    }
+    &_04 {
+      padding: 100px 0;
+      background-color: #001424;
+      p {
+        font-size: $p_size;
+        margin-bottom: 20px;
+      }
+    }
+    &_05 {
+      padding: 100px 0;
+      ul li {
+        color: white;
+      }
+    }
+    &_06 {
+      padding: 100px 0;
+      background-color: #001424;
+      p {
+        font-size: $p_size;
+      }
+    }
+    &_07 {
+      padding: 100px 0;
+      background-color: #001424;
+      p {
+        font-size: $p_size;
+      }
+    }
+  }
+  .teachers_section {
+    p {
+      font-size: $p_size;
+      margin: 30px;
+    }
+  }
+  .approved_vendor {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 250px;
+      margin: 20px;
+    }
+    p.small {
+      margin: 0;
+    }
+  }
+  .what_people_say {
+    padding: 20px 0;
+    .about_flangoo {
+      width: 250px;
+    }
+    .phone_cont {
+      padding: 30px;
+    }
+  }
+  .compliants {
+    img {
+      height: 100px;
+      margin: 20px;
+    }
+  }
+  &.promo_page {
+    .hero {
+      .btn {
+        width: inherit;
+      }
+    }
+  }
+}
+
+.main_cta {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ff2905;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  &.buy_btn {
+    background-color: #eb8115;
+  }
+  small {
+    font-weight: normal;
+    text-transform: none;
+    display: block;
+    font-size: 15px;
+    white-space: normal;
+  }
+}
+
+.front_face {
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .ctas {
+    display: flex;
+    justify-content: center;
+    a {
+      max-width: 380px;
+      margin: 30px 20px;
+      white-space: normal;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1;
+    }
+  }
+  .img-fluid {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .landing_page {
+    .hero {
+      margin-top: 0;
+      height: auto;
+      padding: 0 25px 20px;
+      .try_btn,
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 30px;
+        margin: 15px 0 35px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      .ctas {
+        margin-top: 80px;
+      }
+      .row_80 {
+        padding: 0;
+        padding-top: 50px;
+      }
+    }
+    .section {
+      h3 {
+        max-width: 95%;
+      }
+    }
+  }
+  .main_cta {
+    max-width: 95%;
+    font-size: 18px;
+    small {
+      font-size: 10px;
+    }
+  }
+  .front_face {
+    h1 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    .ctas {
+      flex-direction: column;
+    }
+  }
+}

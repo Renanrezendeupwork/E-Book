@@ -1,0 +1,15 @@
+.help_page {
+  .btn_facebook {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .help_page {
+    .btn_facebook {
+      width: 90%;
+      margin-bottom: 25px;
+      padding: 5px 10%;
+    }
+  }
+}

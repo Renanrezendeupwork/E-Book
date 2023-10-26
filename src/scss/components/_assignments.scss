@@ -1,0 +1,48 @@
+.assignment_cont {
+  background-size: cover;
+  margin-top: $nav-height;
+  background-position: center left;
+  .container_info {
+    padding-top: 50px;
+    min-height: 40vh;
+    padding-bottom: 50px;
+    background: linear-gradient(
+      90deg,
+      black 0%,
+      rgba(0, 0, 0, 0.7) 51%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    color: #fff;
+    max-width: 90%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    // p, a, h2, h3{
+    //   color: white;
+    // }
+    .badge{
+      padding: 6px 12px;
+      border-radius: 50px;
+    }
+  }
+  .btn {
+    border-radius: 10px;
+  }
+}
+.green_theme{
+  .assignment_cont{
+    .container_info{
+      background: linear-gradient(
+        90deg,
+        white 0%,
+        rgba(255, 255, 255, 0.7) 51%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      .badge{
+        background-color: $color-green-button !important;
+      }
+    }
+  }
+}

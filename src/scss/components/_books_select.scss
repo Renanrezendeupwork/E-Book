@@ -1,0 +1,41 @@
+.books_select {
+  background-color: $color-light;
+  padding: 10px;
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-dark !important;
+  }
+  .books_container {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  .book_item {
+    color: $color-dark;
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    &.selected {
+      opacity: 1;
+      background-color: #c3201f;
+      p {
+        color: #fff;
+      }
+    }
+    img {
+      max-width: 100px;
+      margin-right: 10px;
+    }
+    p {
+      color: $color-dark;
+      flex: 2 1;
+      align-self: center;
+    }
+  }
+}

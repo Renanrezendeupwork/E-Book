@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Profile",
+    "id": "profile",
+    "path": "/profile",
+    "icon": "fal fa-user",
+    "teacher_only": true
+  },
+  {
+    "name": "Emails",
+    "id": "emails",
+    "path": "/emails",
+    "icon": "fal fa-envelope",
+    "teacher_only": true
+  },
+  {
+    "name": "Password and authentication",
+    "id": "security",
+    "path": "/security",
+    "icon": "fal fa-key",
+    "teacher_only": true
+  },
+  {
+    "name": "Students",
+    "id": "students",
+    "path": "/students",
+    "icon": "fal fa-users-class",
+    "teacher_only": true
+  },
+  {
+    "name": "Grades & Quizzes",
+    "id": "gradesquizzes",
+    "path": "/grades",
+    "icon": "fal fa-ballot-check",
+    "teacher_only": true
+  },
+  {
+    "name": "Appearance",
+    "id": "appearance",
+    "path": "/appearance",
+    "icon": "fal fa-palette",
+    "teacher_only": true
+  }
+]

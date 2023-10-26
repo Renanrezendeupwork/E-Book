@@ -1,0 +1,85 @@
+footer {
+  margin-top: auto;
+  $dark-color: #999;
+  $space-top: 45px;
+  padding-top: $space-top;
+  padding-bottom: $space-top;
+  border-top: 1px solid $dark-color;
+  .fb_footer {
+    width: 210px;
+    height: 64px;
+    margin-right: 12px;
+  }
+  color: white;
+  font-size: 14px;
+  a {
+    color: $dark-color;
+  }
+  ul {
+    margin: 24px 0px;
+  }
+  &.footer_home {
+    background-color: #001424;
+    padding: 5em 0;
+    margin-bottom: 0;
+    h3,
+    p {
+      color: white !important;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .logos {
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        max-height: 50px;
+        width: auto;
+        height: auto;
+      }
+    }
+    ul {
+      float: left;
+      margin-right: 50px;
+      li {
+        font-size: 20px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .ftr-copy{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+  }
+  .ftr-logo{
+    width: 104px;
+    height: 34px;
+  }
+}
+.green_theme footer{
+  background-color: $color-green-footer;
+  color: $color-light;
+}
+@media screen and (max-width: 765px) {
+  .logos {
+    flex-direction: column;
+    & > div {
+      text-align: center;
+      &:first-child {
+        img {
+          margin-right: 25px;
+          margin-left: 25px;
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+}

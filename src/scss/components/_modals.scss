@@ -1,0 +1,17 @@
+.modal {
+  .modal-content {
+    background-color: $color-dark;
+    .close {
+      color: $color-light;
+    }
+  }
+  .bg-white {
+    .modal-content {
+      background-color: white;
+      color: $color-dark;
+      *:not(button) {
+        color: $color-dark;
+      }
+    }
+  }
+}

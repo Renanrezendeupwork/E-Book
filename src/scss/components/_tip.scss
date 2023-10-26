@@ -1,0 +1,56 @@
+@mixin tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #fff;
+}
+
+.tip {
+  @include tip;
+  &-up {
+    top: -20px; /* Same as body margin top + border */
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    &-center {
+      top: -20px; /* Same as body margin top + border */
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      @include center_absolute_x;
+    }
+  }
+
+  &-down {
+    top: 100%;
+    left: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    &-center {
+      top: 100%;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      @include center_absolute_x;
+    }
+  }
+
+  &-left {
+    top: 10px;
+    left: -25px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  &-right {
+    top: 10px;
+    right: -25px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}

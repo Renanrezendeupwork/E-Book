@@ -1,0 +1,19 @@
+[
+  { "to": "/students", "txt": "Manage Students", "teacher_only": true },
+  { "to": "/grades", "txt": "Manage Grades", "teacher_only": true },
+  { "to": "/books", "txt": "Manage Books", "teacher_only": true },
+  { "to": "/assignments", "txt": "Manage Assignments", "teacher_only": true },
+  { "to": "/answerkeys", "txt": "Answer Keys", "teacher_only": true },
+  { "to": "/youraccount", "txt": "Account", "teacher_only": true },
+  { "to": "/student", "txt": "Account", "student_only": true },
+  { "to": "/achievements", "txt": "Achievements", "priv": "hide_achievements" },
+  { "to": "/help", "txt": "Help & Tutorials", "teacher_only": true },
+  { "to": "/settings", "txt": "Settings", "teacher_only": true },
+  {
+    "to": "https://admin.flangoo.com/index.php?admin/dashboard",
+    "type": "link",
+    "txt": "Admin",
+    "admin": true
+  },
+  { "to": "/sign_out", "txt": "Sign Out" }
+]

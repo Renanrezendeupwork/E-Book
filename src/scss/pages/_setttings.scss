@@ -1,0 +1,99 @@
+.settings_page {
+  .user_data {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    img {
+      width: 80px;
+      margin-right: 10px;
+    }
+    h5,
+    p {
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  }
+  label {
+    font-weight: bold;
+    color: white;
+  }
+  small {
+    color: $color-light-gray;
+    &.help {
+      color: #96a1af;
+    }
+  }
+}
+.themes_cont {
+  display: flex;
+  $box_size: 100px;
+  .theme_item {
+    border: 1px solid $color-light;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    small {
+      text-align: center;
+      display: block;
+      margin: 2px 0;
+      color: $color-light; // FERNANDO: update with theme color;
+    }
+    .theme_box {
+      width: $box_size;
+      height: $box_size;
+      min-height: $box_size;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      border-bottom: solid 1px $color-light;
+      .nav {
+        background: $main-nav-color;
+        width: 100%;
+        height: 15%;
+      }
+      .body {
+        background: $main-background;
+        width: 100%;
+        height: 65%;
+      }
+      .footer {
+        background: $main-footer-color;
+        width: 100%;
+        height: 20%;
+      }
+      &.green_theme {
+        .nav {
+          background: $main-nav-color-green;
+        }
+        .body {
+          background: $color-green-back;
+        }
+        .footer {
+          background: $color-green-footer;
+        }
+      }
+      &.dark_theme {
+        .footer {
+          border-top: 1px solid $color-dark-gray;
+        }
+      }
+    }
+  }
+}
+.green_theme {
+  .themes_cont {
+    .theme_item {
+      border: 1px solid $color-dark;
+      small {
+        color: $color-dark;
+      }
+      .theme_box {
+        border-bottom: 1px solid $color-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.thankyou_page {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  text-align: center;
+  h1 {
+    margin-bottom: 20px;
+  }
+  & > div {
+    width: 40%;
+  }
+}

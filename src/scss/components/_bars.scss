@@ -1,0 +1,22 @@
+.bars_container {
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  .bar_option {
+    position: relative;
+    margin-bottom: 10px;
+    h6 {
+      margin-bottom: 5px;
+    }
+    .progress {
+      background-color: transparent;
+      height: auto;
+      .progress-bar {
+        border-radius: 30px;
+        min-width: 40px;
+        align-items: flex-end;
+        padding: 10px;
+      }
+    }
+  }
+}

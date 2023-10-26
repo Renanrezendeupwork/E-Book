@@ -1,0 +1,37 @@
+$bootstrap-success: #33a744;
+$bootstrap-green: #4ecdc4ff;
+$bootstrap-daner: #ff6b6bff;
+$bootstrap-warning: #ffe66dff;
+$bootstrap-primary: #8ae1fc;
+
+.alert {
+  &.d-flex {
+    * {
+      margin: 0;
+    }
+  }
+  &-danger {
+    color: $color-light-gray;
+    background-color: $bootstrap-daner;
+    border-color: darken($color: $bootstrap-daner, $amount: 20);
+  }
+  &-success {
+    color: white;
+    background-color: $bootstrap-success;
+    border-color: darken($color: $bootstrap-success, $amount: 20);
+  }
+  &-primary {
+    color: #296e7c;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: #296e7c;
+    }
+    background-color: $bootstrap-primary;
+    border-color: darken($color: $bootstrap-primary, $amount: 20);
+  }
+}

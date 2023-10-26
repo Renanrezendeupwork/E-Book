@@ -1,0 +1,58 @@
+.homeVideo {
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.video_container_full {
+  transition: all 0.2s ease-out;
+  position: fixed;
+  top: 110%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  z-index: $zindex-modal;
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+    top: 0;
+  }
+  .video_item {
+    display: none;
+    &.active {
+      display: block;
+    }
+    h3,
+    p {
+      width: 100%;
+      margin: 0;
+      padding: 5px 0;
+      text-align: left !important;
+    }
+    p {
+      opacity: 0.8;
+    }
+    .label {
+      margin-right: 5px;
+    }
+    video {
+      height: 60vh;
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: $zindex-fixed;
+  }
+}
